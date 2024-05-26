@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="1.598" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="US1003 Kullanici JPH da PUT request yapar" name="TC03 donen actual response expected response ile ayni olmali" time="1.511">
+<system-out><![CDATA[
+Given Kullanici "jPHBaseUrl" base URL'ini kullanir..........................passed
+And Path parametreleri icin "posts/77" kullanir.............................passed
+When PUT request icin "SonTest" "API Veda" ve 10 degerleri ile request body olusturur.passed
+And Test icin  "SonTest" "API Veda" 10 ve 77 degerleri ile expected response body olusturur.passed
+Then jPH server'a PUT request gonderir ve response'i kaydeder...............passed
+And jPH responseBody'sindeki attributeleri test etmek icin response i JsonPath objesine cast eder.passed
+And expected response body ile actual response'daki attribute degerlerinin ayni oldugunu test eder.passed
+And jPH respons daki "Connection" header degerinin "keep-alive".............passed
+And jPH response'da status degerinin 200....................................passed
+]]></system-out>
+</testcase>
+</testsuite>
